@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(230, 223, 223);
+    margin-top: 100px;
+    display: flex;
+}
+
+.carousel-container {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 3px 30px rgb(0 0 0 / 0.6);
+}
+
+.navigation .prev {
+    background: black;
+    color: white;
+    position: absolute;
+    z-index: 10;
+    font-size: 25px;
+    top: 40%;
+    left: 10px;
+    font-weight: 700;
+
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .navigation .next {
+    background: black;
+    color: white;
+    right: 10px;
+    position: absolute;
+    font-size: 25px;
+    z-index: 10;
+    top: 40%;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+
+.navigation {
+    opacity: 0;
+}
+
+.carousel:hover+.navigation, .navigation:hover {
+    opacity: 1;
+}
+
+.navigation .nav-btn:hover {
+    display: block;
+    background: rgba(255, 255, 255, 1);
+    color: black;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.carousel {
+    transition: all 0.3s ease;
+  
+}
+
+.carousel img {
+    transition: all 0.3s ease;
+    border:8px solid white;
+}
+  
+.item {
+    display: none;
+}
+  
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
